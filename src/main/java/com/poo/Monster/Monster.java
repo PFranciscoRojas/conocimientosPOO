@@ -1,13 +1,13 @@
 package com.poo.Monster;
 
 public class Monster {
-    Integer id;
-    String name;
-    Integer level;
-    String typeMonster;
-    Integer lives;
-    Double force;
-    String experience;
+    public Integer id;
+    public String name;
+    public Integer level;
+    public String typeMonster;
+    public Integer lives;
+    public Double force;
+    public String experience;
 
     public Integer getId()
     {
@@ -94,7 +94,8 @@ public class Monster {
         if (this.lives > 0) 
         {
             System.out.println("I am living, I have! " + this.lives + " lives");
-        }else
+        }
+        else
         {
             System.out.println("I'm dead, I have " + this.lives + " lives");
         }
