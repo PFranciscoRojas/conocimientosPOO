@@ -1,14 +1,14 @@
 package com.poo.Character;
 
-class heroe {
+class Character {
     String name;
     int level;
     int force;
     int life;
     int shield;
 
-    // caracter
-    public heroe(String name, int level, int force, int life, int shield) {
+    // Character
+    public Character(String name, int level, int force, int life, int shield) {
         this.name = name;
         this.level = level;
         this.force = force;
