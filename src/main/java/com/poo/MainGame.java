@@ -9,13 +9,13 @@ public class MainGame {
     private static Store store;
 
     public static void main(String[] args) {
-        // Initialize instances of the necessary classes
+        // Inicializa instancias
         fight = new Fight();
         quest = new Quest();
         inventory = new Inventory();
         store = new Store();
 
-        // Show the menu
+        // ver menu
         showMenu();
     }
 
@@ -32,22 +32,22 @@ public class MainGame {
         System.out.print("Select an option: ");
         int option = scanner.nextInt();
 
-        // Implement logic based on the selected option
+        // opciones
         switch (option) {
             case 1:
-                // Logic to start a fight
+                //start a fight
                 fight.startFight();
                 break;
             case 2:
-                // Logic to perform a quest
+                //perform a quest
                 quest.performQuest();
                 break;
             case 3:
-                // Logic to view the inventory
+                //view the inventory
                 inventory.showInventory();
                 break;
             case 4:
-                // Logic to visit the store
+                //visit the store
                 store.visitStore();
                 break;
             case 5:
@@ -58,7 +58,7 @@ public class MainGame {
                 System.out.println("Invalid option. Try again.");
         }
 
-        // Show the menu again after executing the option
+        // muestra las opciones del menu nuevamente
         showMenu();
 
         scanner.close();
