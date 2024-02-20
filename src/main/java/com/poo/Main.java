@@ -2,7 +2,12 @@ package com.poo;
 
 import java.util.Scanner;
 
-public class MainGame {
+import com.poo.menu.Fight;
+import com.poo.menu.Inventory;
+import com.poo.menu.Quest;
+import com.poo.menu.Store;
+
+public class Main {
     private static Fight fight;
     private static Quest quest;
     private static Inventory inventory;

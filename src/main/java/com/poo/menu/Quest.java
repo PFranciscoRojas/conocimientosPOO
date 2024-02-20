@@ -1,4 +1,4 @@
-package com.poo;
+package com.poo.menu;
 
 public class Quest {
     public void performQuest() {

@@ -1,4 +1,4 @@
-package com.poo;
+package com.poo.menu;
 
 public class Fight {
     public void startFight() {
