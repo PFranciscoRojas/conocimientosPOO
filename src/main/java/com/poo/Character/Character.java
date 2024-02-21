@@ -1,6 +1,6 @@
 package com.poo.Character;
 
-class Character {
+public class Character {
     String name;
     int level;
     int force;
