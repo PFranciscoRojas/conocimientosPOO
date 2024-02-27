@@ -1,5 +1,6 @@
 package com.poo;
 
+import com.poo.Character.Character;
 import com.poo.Monster.Monster;
 
 import java.util.Scanner;
@@ -18,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Hello world desde Java!");
-
+        
         Monster monster = new Monster();
         monster.setName("Casper");
         monster.setLevel(2);
@@ -26,9 +27,15 @@ public class Main {
         monster.setLives(0);
         monster.setForce(122.1);
         monster.setExperience("2 años");
-
+        
         monster.fly();
         monster.isLive();
+        
+        Character character = new Character("El ferxxito", 1, 10, 100, 20);
+        
+        Fight peleaFight = new Fight();
+
+        peleaFight.combat(character, monster);
 
          // Crear una instancia de la tienda de armas
          Tienda espada = new Tienda("Espada del Destino", "Espada", 150, 10);
@@ -67,7 +74,7 @@ public class Main {
         switch (option) {
             case 1:
                 //start a fight
-                fight.startFight();
+                System.out.println("start fight");
                 break;
             case 2:
                 //perform a quest
